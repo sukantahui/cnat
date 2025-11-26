@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>JavaScript from Basic to Pro — Full Course Roadmap | Coder & AccoTax</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
+    <style>
     :root {
       --bg: #020617;
       --bg-card: #020617;
@@ -17,11 +17,7 @@
       --border: #1f2937;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -31,10 +27,29 @@
       padding: 24px 16px 40px;
     }
 
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
+    .page { max-width: 1100px; margin: 0 auto; }
+
+    /* TOP ORGANISATION DETAILS BAR */
+    .top-org-bar {
+      background: rgba(15,23,42,0.9);
+      padding: 12px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(148,163,184,0.4);
+      margin-bottom: 18px;
+      box-shadow: 0 0 22px rgba(56,189,248,0.08);
     }
+
+    .top-org-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      font-size: 0.85rem;
+    }
+
+    .top-org-grid div strong { color: #e0f2fe; }
+    .top-org-grid a { color: var(--accent); text-decoration: none; }
+    .top-org-grid a:hover { text-decoration: underline; }
 
     header {
       border-radius: 24px;
@@ -51,340 +66,145 @@
     }
 
     .logo-circle {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
+      width: 52px; height: 52px; border-radius: 50%;
       border: 2px solid rgba(56,189,248,0.8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      font-size: 0.7rem;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; letter-spacing: 0.08em; font-size: 0.7rem;
       text-transform: uppercase;
       background: rgba(15,23,42,0.9);
       box-shadow: 0 0 24px rgba(56,189,248,0.5);
     }
 
-    .header-main {
-      flex: 1 1 260px;
-    }
+    .header-main { flex: 1 1 260px; }
 
     h1 {
-      font-size: 2rem;
-      line-height: 1.25;
+      font-size: 2rem; line-height: 1.25;
       background: linear-gradient(90deg, #e0f2fe, #f9a8d4, #bfdbfe);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      -webkit-background-clip: text; color: transparent;
       margin-bottom: 6px;
     }
 
-    .header-tagline {
-      font-size: 0.98rem;
-      color: var(--muted);
-    }
+    .header-tagline { font-size: 0.98rem; color: var(--muted); }
 
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 
     .badge {
-      font-size: 0.7rem;
-      text-transform: uppercase;
+      font-size: 0.7rem; text-transform: uppercase;
       letter-spacing: 0.12em;
-      padding: 4px 10px;
-      border-radius: 999px;
+      padding: 4px 10px; border-radius: 999px;
       border: 1px solid rgba(148,163,184,0.6);
-      color: #e5e7eb;
       background: rgba(15,23,42,0.85);
     }
 
     .mode-pill {
       padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 0.75rem;
+      border-radius: 999px; font-size: 0.75rem;
       border: 1px solid rgba(148,163,184,0.6);
       background: rgba(15,23,42,0.9);
-      color: var(--muted);
-      text-align: center;
+      color: var(--muted); text-align: center;
       min-width: 140px;
     }
 
-    main {
-      margin-top: 16px;
-      display: grid;
+    main { margin-top: 16px; display: grid;
       grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.1fr);
       gap: 22px;
     }
 
-    @media (max-width: 900px) {
-      main {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
 
     .card {
       background: rgba(15,23,42,0.95);
-      border-radius: 22px;
-      border: 1px solid var(--border);
-      padding: 20px 20px 22px;
+      border-radius: 22px; border: 1px solid var(--border);
+      padding: 20px;
       box-shadow: 0 18px 45px rgba(0,0,0,0.55);
     }
 
-    .card + .card {
-      margin-top: 16px;
-    }
+    .card h2 { font-size: 1.15rem; color:#dbeafe; margin-bottom:8px; }
+    .lead { font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; }
 
-    .card h2 {
-      font-size: 1.15rem;
-      margin-bottom: 8px;
-      color: #dbeafe;
-    }
-
-    .card p.lead {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-
-    .pill-title {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-
-    .pill-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: var(--accent);
-      box-shadow: 0 0 12px rgba(56,189,248,0.8);
-    }
-
-    /* Content list */
-    .module-list {
-      list-style: none;
-      counter-reset: module;
-    }
-
+    /* Modules List */
+    .module-list { list-style:none; counter-reset:module; }
     .module-item {
+      padding: 14px 14px 14px 16px;
       border-radius: 16px;
-      padding: 14px 12px 14px 14px;
-      margin-bottom: 10px;
-      background: linear-gradient(120deg, rgba(15,23,42,0.95), rgba(15,23,42,0.92));
-      border: 1px solid rgba(55,65,81,0.9);
+      margin-bottom: 12px;
+      background: linear-gradient(120deg, rgba(15,23,42,0.95), rgba(15,23,42,0.9));
+      border: 1px solid rgba(55,65,81,0.95);
       position: relative;
-      overflow: hidden;
     }
 
     .module-item::before {
       counter-increment: module;
       content: counter(module);
       position: absolute;
-      top: 14px;
-      left: -16px;
-      font-size: 3.2rem;
-      font-weight: 800;
-      color: rgba(15,23,42,0.8);
-      text-shadow: 0 0 24px rgba(15,23,42,1);
-      pointer-events: none;
+      top: 12px; left: -16px;
+      font-size: 3rem; font-weight: 800;
+      color: rgba(15,23,42,0.7);
+      text-shadow: 0 0 20px rgba(15,23,42,1);
+      pointer-events:none;
     }
 
-    .module-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 10px;
-      margin-bottom: 6px;
-    }
+    .module-title { font-size: 1rem; font-weight: 600; color: #e5e7eb; }
+    .module-title a { color: inherit; text-decoration: none; }
+    .module-desc { color: var(--muted); font-size:0.82rem; }
 
-    .module-title {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: #e5e7eb;
-    }
+    .topic-list { margin-left: 18px; margin-top: 4px; }
+    .topic-list li { margin-bottom: 3px; }
 
-    .module-title a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .module-title a:hover {
-      text-decoration: underline;
-    }
-
-    .module-level {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--accent2);
-      white-space: nowrap;
-    }
-
-    .module-desc {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-
-    .topic-list {
-      margin-left: 16px;
-      margin-top: 4px;
-      font-size: 0.82rem;
-      color: #cbd5f5;
-    }
-
-    .topic-list li {
-      margin-bottom: 3px;
-      list-style: disc;
-    }
-
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 4px;
-    }
-
+    .tag-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
     .tag {
-      font-size: 0.68rem;
-      padding: 2px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(148,163,184,0.5);
-      color: var(--muted);
+      font-size:0.67rem; padding:2px 8px;
+      border-radius:999px; border:1px solid rgba(148,163,184,0.5);
     }
 
-    /* Module button */
-    .module-button-row {
-      margin-top: 8px;
-    }
-
+    /* Button */
     .module-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      background: transparent;
-      color: var(--accent);
-      font-size: 0.76rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+      display:inline-flex; align-items:center;
+      padding:6px 14px; border-radius:999px;
+      border:1px solid var(--accent);
+      font-size:0.76rem; color:var(--accent);
+      text-decoration:none; letter-spacing:0.12em;
+      margin-top:6px;
     }
+    .module-button::after { content:"↗"; margin-left:6px; }
 
-    .module-button::after {
-      content: "↗";
-      font-size: 0.8rem;
-    }
-
-    .module-button:hover {
-      background: rgba(56,189,248,0.12);
-      box-shadow: 0 0 18px rgba(56,189,248,0.4);
-    }
-
-    /* Side info column */
+    /* Side Info */
     .side-card {
-      background: radial-gradient(circle at top, rgba(56,189,248,0.13), transparent 52%),
+      background: radial-gradient(circle at top, rgba(56,189,248,0.14), transparent 55%),
                   rgba(15,23,42,0.96);
-      border-radius: 22px;
-      border: 1px solid rgba(55,65,81,0.95);
-      padding: 18px 18px 16px;
+      border-radius:22px;
+      border:1px solid rgba(55,65,81,1);
+      padding: 18px;
       box-shadow: 0 22px 50px rgba(0,0,0,0.75);
     }
 
-    .side-card h2 {
-      font-size: 1.05rem;
-      margin-bottom: 4px;
-      color: #e0f2fe;
-    }
-
-    .side-card p {
-      font-size: 0.84rem;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
-    .side-list {
-      list-style: none;
-      font-size: 0.8rem;
-      color: #cbd5f5;
-      margin-top: 6px;
-    }
-
-    .side-list li {
-      margin-bottom: 5px;
-    }
-
-    /* Organisation details (must be on every page) */
     footer {
-      margin-top: 26px;
+      margin-top: 30px; padding: 18px;
       border-radius: 22px;
-      padding: 16px 18px;
-      border: 1px solid rgba(55,65,81,0.9);
-      background: linear-gradient(120deg, rgba(15,23,42,0.97), rgba(15,23,42,0.9));
-    }
-
-    .org-heading {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--accent3);
-      margin-bottom: 6px;
-    }
-
-    .org-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
-      gap: 10px;
-      font-size: 0.82rem;
-    }
-
-    @media (max-width: 700px) {
-      .org-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-
-    .org-name {
-      font-weight: 600;
-      color: #e5e7eb;
-      margin-bottom: 2px;
-    }
-
-    .org-sub {
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    .org-grid a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .org-grid a:hover {
-      text-decoration: underline;
-    }
-
-    .org-small {
-      font-size: 0.75rem;
-      color: #64748b;
-      margin-top: 6px;
+      background:linear-gradient(120deg, rgba(15,23,42,0.98), rgba(15,23,42,0.92));
+      border:1px solid rgba(55,65,81,0.9);
     }
   </style>
 </head>
 <body>
   <div class="page">
+    <!-- ⭐ TOP ORGANISATION DETAIL BAR ⭐ -->
+    <div class="top-org-bar">
+      <div class="top-org-grid">
+        <div>
+          <strong>Coder & AccoTax</strong><br>
+          25(10/A) Shibtala Road, PO – N. C. Pukur, Barrackpore  
+        </div>
+        <div>
+          <strong>Website:</strong> <a href="https://www.codernaccotax.co.in">www.codernaccotax.co.in</a><br>
+          <strong>Phone:</strong> +91 7003756860
+        </div>
+        <div>
+          <strong>Author:</strong> Sukanta Hui<br>
+          <strong>Course:</strong> JavaScript · Basic to Pro
+        </div>
+      </div>
+    </div>
     <!-- HEADER -->
     <header>
       <div class="logo-circle">
