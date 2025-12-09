@@ -1,0 +1,1 @@
+import{j as t}from"./index-CH1PT_vM.js";import{P as o}from"./PracticeEngine-Bq1MwDRa.js";import{q as e}from"./getting-started-with-excel-test-DfK4kEl2.js";import"./CodeBlock-DjjLi1LT.js";import"./prism-json-D5SuNiM_.js";function p(){return t.jsx(o,{title:"Module Test – Excel",questions:e,testId:"ecel_foundation_test_100"})}export{p as default};
