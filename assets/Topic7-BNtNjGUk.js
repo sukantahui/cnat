@@ -1,1 +1,0 @@
-import{j as t}from"./index-Dfe696dl.js";import{Q as o}from"./QuizEngine-COks9RNx.js";import{q as s}from"./tally-accounting-basic-test-DLIYUOuM.js";import"./prism-json-CXNvh_in.js";function a(){return t.jsx(o,{title:"Module Test – Tally Accounting Basic",questions:s,testId:"c_syntax_test"})}export{a as default};
