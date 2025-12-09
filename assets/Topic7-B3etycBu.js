@@ -1,0 +1,1 @@
+import{j as t}from"./index-D5BcnkX8.js";import{Q as o}from"./QuizEngine-BJXhGg2_.js";import{q as s}from"./intro-to-tallyprime-test-Cdzhsq5v.js";import"./prism-json-CUNHFMVZ.js";function a(){return t.jsx(o,{title:"Module Test – Tally Accounting Basic",questions:s,testId:"c_syntax_test"})}export{a as default};
