@@ -1,0 +1,1 @@
+import{j as t}from"./index-X8Setxi0.js";import{P as o}from"./PracticeEngine-BnM_wRpD.js";import{q as i}from"./c-fundamental-test-C81JjM8V.js";import"./CodeBlockGeneral-F1l_MWDX.js";import"./prism-json-Dg9dty7U.js";function a(){return t.jsx(o,{title:"Module Test – C Programming Foundations",questions:i,testId:"c_foundation_test_100"})}export{a as default};
