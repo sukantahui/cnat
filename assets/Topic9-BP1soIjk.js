@@ -1,0 +1,1 @@
+import{j as t}from"./index-KxAs0OZj.js";import{Q as o}from"./QuizEngine-CpkCkiK1.js";import{q as r}from"./getting-started-with-excel-test-DfK4kEl2.js";import"./CodeBlockGeneral-BuZGB3Y1.js";import"./prism-json-JsjCE9Dr.js";import"./rotate-ccw-DGd4znnN.js";function u(){return t.jsx(o,{title:"Module Test – Control Excel",questions:r,testId:"c_syntax_test"})}export{u as default};
