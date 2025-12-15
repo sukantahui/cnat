@@ -1,0 +1,1 @@
+import{j as t}from"./index-6hdDbtc7.js";import{Q as o}from"./QuizEngine-BV8K7P4l.js";import{q as i}from"./c-syntax-test-BHWG4GrC.js";import"./CodeBlockGeneral-6oCqC6K8.js";import"./prism-json-AEe4Allf.js";import"./rotate-ccw-DvhXAsIV.js";function a(){return t.jsx(o,{title:"Module Test – Control Flow & Decision Making",questions:i,testId:"c_syntax_test"})}export{a as default};
