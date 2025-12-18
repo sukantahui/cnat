@@ -1,0 +1,28 @@
+import{r as t,j as e,a as s}from"./index-SZ7XnWrl.js";const i="animate-[fadeIn_0.8s_ease-out]";class n extends t.Component{render(){return e.jsxs("div",{className:`space-y-14 ${i}`,children:[e.jsxs("header",{className:"space-y-3",children:[e.jsx("h2",{className:"text-2xl font-semibold text-indigo-300 tracking-wide",children:"Iterating Through Tuples"}),e.jsxs("p",{className:"text-slate-300 text-sm leading-relaxed",children:["Iteration means accessing each element of a tuple",e.jsx("strong",{children:" one by one"}),"."]}),e.jsxs("p",{className:"text-slate-400 text-sm",children:["Tuples support iteration naturally because they are",e.jsx("strong",{children:" ordered collections"}),"."]})]}),e.jsxs("section",{className:"space-y-4",children:[e.jsxs("h3",{className:"text-xl font-semibold text-emerald-300",children:["1️⃣ Iterating Using a ",e.jsx("code",{children:"for"})," Loop"]}),e.jsx(s,{title:"Basic Tuple Iteration",initialCode:`t = (10, 20, 30)
+
+for value in t:
+    print(value)`}),e.jsx("p",{className:"text-slate-400 text-sm",children:"✔ Values are accessed in order ✔ No index needed"})]}),e.jsxs("section",{className:"bg-slate-900/60 border border-slate-700 rounded-xl p-4",children:[e.jsx("p",{className:"text-slate-200 text-sm mb-2 font-semibold",children:"🔁 Tuple Iteration (Conceptual View)"}),e.jsxs("svg",{viewBox:"0 0 520 120",className:"w-full h-32",children:[e.jsx("rect",{x:"30",y:"50",width:"460",height:"40",rx:"10",fill:"#1e293b"}),e.jsx("text",{x:"80",y:"75",fill:"#e5e7eb",fontSize:"14",children:"10"}),e.jsx("text",{x:"180",y:"75",fill:"#e5e7eb",fontSize:"14",children:"20"}),e.jsx("text",{x:"280",y:"75",fill:"#e5e7eb",fontSize:"14",children:"30"}),e.jsx("text",{x:"380",y:"75",fill:"#94a3b8",fontSize:"12",children:"for value in tuple →"})]})]}),e.jsxs("section",{className:"space-y-4",children:[e.jsxs("h3",{className:"text-xl font-semibold text-sky-300",children:["2️⃣ Iterating Using Index (",e.jsx("code",{children:"range()"}),")"]}),e.jsx(s,{title:"Iteration with Index",initialCode:`t = ("a", "b", "c")
+
+for i in range(len(t)):
+    print(i, t[i])`}),e.jsx("p",{className:"text-slate-400 text-sm",children:"✔ Useful when index is needed ❌ Slightly less readable than direct iteration"})]}),e.jsxs("section",{className:"space-y-4 border border-indigo-700 rounded-xl p-4 bg-indigo-900/20",children:[e.jsxs("h3",{className:"text-indigo-300 font-semibold",children:["3️⃣ Best Practice: ",e.jsx("code",{children:"enumerate()"})]}),e.jsx(s,{title:"Iterating with enumerate()",initialCode:`t = ("Python", "Java", "C++")
+
+for index, value in enumerate(t):
+    print(index, value)`}),e.jsx("p",{className:"text-emerald-300 text-sm",children:"✔ Clean ✔ Pythonic ✔ Recommended"})]}),e.jsxs("section",{className:"space-y-4",children:[e.jsx("h3",{className:"text-xl font-semibold text-emerald-300",children:"4️⃣ Iterating Nested Tuples"}),e.jsx(s,{title:"Nested Tuple Iteration",initialCode:`t = ((1, 2), (3, 4), (5, 6))
+
+for pair in t:
+    for value in pair:
+        print(value)`}),e.jsx("p",{className:"text-slate-400 text-sm",children:"✔ Outer loop → inner tuple ✔ Inner loop → elements"})]}),e.jsxs("section",{className:"space-y-4 border border-sky-700 rounded-xl p-4 bg-sky-900/20",children:[e.jsx("h3",{className:"text-sky-300 font-semibold",children:"5️⃣ Iteration with Tuple Unpacking"}),e.jsx(s,{title:"Unpacking While Iterating",initialCode:`records = (("Ritaja", 90), ("Mounita", 85))
+
+for name, marks in records:
+    print(name, marks)`}),e.jsx("p",{className:"text-emerald-300 text-sm",children:"✔ Very readable ✔ Common in real-world data processing"})]}),e.jsxs("section",{className:"space-y-4 border border-rose-700 rounded-xl p-4 bg-rose-900/20",children:[e.jsx("h3",{className:"text-rose-300 font-semibold",children:"❌ Common Mistakes"}),e.jsx(s,{title:"Mistakes During Iteration",initialCode:`t = (1, 2, 3)
+
+# ❌ Wrong
+# for i in t:
+#     print(t[i])   # TypeError
+
+# ✔ Correct
+for i in range(len(t)):
+    print(t[i])`}),e.jsxs("ul",{className:"list-disc list-inside text-rose-200 text-sm space-y-1",children:[e.jsx("li",{children:"Confusing value with index"}),e.jsx("li",{children:"Using value as index"})]})]}),e.jsxs("section",{className:"space-y-4",children:[e.jsx("h3",{className:"text-xl font-semibold text-emerald-300",children:"6️⃣ Real-World Example"}),e.jsx(s,{title:"Iterating Coordinates",initialCode:`path = ((0,0), (1,2), (3,4))
+
+for x, y in path:
+    print(f"x={x}, y={y}")`})]}),e.jsxs("section",{className:"space-y-4 border border-amber-700 rounded-xl p-4 bg-amber-900/20",children:[e.jsx("h3",{className:"text-amber-300 font-semibold",children:"📝 Exam & Interview Notes"}),e.jsxs("ul",{className:"list-disc list-inside text-amber-200 text-sm space-y-1",children:[e.jsx("li",{children:"Tuples are iterable"}),e.jsxs("li",{children:["Use ",e.jsx("code",{children:"for value in tuple"})," for simplicity"]}),e.jsxs("li",{children:["Use ",e.jsx("code",{children:"enumerate()"})," when index is needed"]}),e.jsx("li",{children:"Unpacking improves readability"})]})]}),e.jsxs("footer",{className:"bg-slate-900/70 border border-slate-700 rounded-xl p-4",children:[e.jsx("p",{className:"text-slate-200 text-sm font-semibold mb-1",children:"✅ Topic11 Summary"}),e.jsxs("ul",{className:"list-disc list-inside text-slate-400 text-xs space-y-1",children:[e.jsx("li",{children:"Tuples support multiple iteration styles"}),e.jsxs("li",{children:[e.jsx("code",{children:"enumerate()"})," is best practice"]}),e.jsx("li",{children:"Nested tuples need nested loops"})]})]})]})}}export{n as default};
