@@ -1,0 +1,21 @@
+import{r as t,j as e,E as s}from"./index-Ca41Uxay.js";class o extends t.Component{render(){return e.jsxs("div",{className:"space-y-6",children:[e.jsx("h2",{className:"text-xl font-semibold text-sky-300",children:"let, const, Block Scope & Temporal Dead Zone (ES6)"}),e.jsxs("p",{className:"text-slate-300 text-sm leading-relaxed",children:["Modern JavaScript introduced ",e.jsx("strong",{children:"let"})," and ",e.jsx("strong",{children:"const"})," to replace the older ",e.jsx("strong",{children:"var"}),". These new declarations give more predictable behavior because they follow ",e.jsx("strong",{children:"block scope"})," and the ",e.jsx("strong",{children:"Temporal Dead Zone (TDZ)"}),"."]}),e.jsx("h3",{className:"text-lg font-semibold text-slate-200",children:"1. let — Block Scoped"}),e.jsxs("p",{className:"text-slate-300 text-sm",children:["A variable declared with ",e.jsx("strong",{children:"let"})," exists only inside the block ",e.jsx("code",{children:"{ }"}),"."]}),e.jsx(s,{language:"javascript",code:`let x = 10;
+
+if (true) {
+  let x = 20;
+  console.log("Inside block:", x);  // 20
+}
+
+console.log("Outside block:", x);    // 10`}),e.jsx("p",{className:"text-slate-400 text-sm",children:"Block scope makes code predictable and prevents accidental overwrites."}),e.jsx("h3",{className:"text-lg font-semibold text-slate-200 mt-8",children:"2. const — Value Cannot Be Reassigned"}),e.jsxs("p",{className:"text-slate-300 text-sm",children:[e.jsx("strong",{children:"const"})," variables cannot be reassigned."]}),e.jsx(s,{language:"javascript",code:`const student = "Ritaja";
+console.log(student);  // Ritaja
+
+student = "Susmita";   // ❌ Error: Assignment to constant variable`}),e.jsx("p",{className:"text-slate-400 text-sm",children:"But note: const does NOT freeze objects or arrays."}),e.jsx(s,{language:"javascript",code:`const marks = [80, 90];
+
+marks.push(95);      
+console.log(marks);  // [80, 90, 95]`}),e.jsx("h3",{className:"text-lg font-semibold text-slate-200 mt-8",children:"3. var — Function Scoped (Old & Error-Prone)"}),e.jsxs("p",{className:"text-slate-300 text-sm",children:[e.jsx("strong",{children:"var"})," does NOT follow block scope and leaks outside."]}),e.jsx(s,{language:"javascript",code:`if (true) {
+  var a = 100;
+}
+
+console.log(a);   // 100 (unsafe)`}),e.jsxs("p",{className:"text-slate-400 text-sm",children:["This is why developers avoid ",e.jsx("strong",{children:"var"})," in modern JavaScript."]}),e.jsx("h3",{className:"text-lg font-semibold text-slate-200 mt-8",children:"4. Temporal Dead Zone (TDZ)"}),e.jsx("p",{className:"text-slate-300 text-sm",children:"TDZ means a variable exists but cannot be accessed before its declaration."}),e.jsx(s,{language:"javascript",code:`console.log(score);
+// ❌ Error: Cannot access 'score' before initialization
+
+let score = 90;`}),e.jsx("p",{className:"text-slate-400 text-sm",children:"This prevents bugs caused by using variables too early."}),e.jsx("h3",{className:"text-lg font-semibold text-slate-200 mt-8",children:"5. Why let & const Are Better Choices"}),e.jsxs("ul",{className:"list-disc ml-5 text-slate-300 text-sm space-y-1",children:[e.jsx("li",{children:"Block scope avoids leaking variables"}),e.jsx("li",{children:"TDZ prevents early access errors"}),e.jsx("li",{children:"const makes code intention clear"}),e.jsx("li",{children:"let is safe for reassignable values"})]}),e.jsxs("p",{className:"text-slate-300 text-sm leading-relaxed mt-2",children:["These features form the foundation of modern ES6+ JavaScript taught at ",e.jsx("strong",{children:"Coder & AccoTax"}),"."]}),e.jsxs("section",{className:"p-4 bg-slate-900/40 border border-slate-800 rounded-2xl mt-10",children:[e.jsx("h3",{className:"text-lg font-semibold text-slate-100",children:"Summary"}),e.jsxs("ul",{className:"list-disc ml-5 mt-3 text-slate-300 text-sm space-y-1",children:[e.jsxs("li",{children:[e.jsx("strong",{children:"let"})," → block scoped, mutable"]}),e.jsxs("li",{children:[e.jsx("strong",{children:"const"})," → block scoped, immutable reference"]}),e.jsxs("li",{children:[e.jsx("strong",{children:"var"})," → function scoped, avoid in modern code"]}),e.jsxs("li",{children:[e.jsx("strong",{children:"TDZ"})," → variable cannot be used before declaration"]})]})]})]})}}export{o as default};
