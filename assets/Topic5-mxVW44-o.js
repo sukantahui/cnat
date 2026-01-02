@@ -1,0 +1,23 @@
+import{c as a,r as o,j as e}from"./index-BD1TWdRJ.js";import{T as n}from"./triangle-alert-Bj6_hJTp.js";import{C as l}from"./circle-check-big-DkhpxmpG.js";/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const r=[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M3 9h18",key:"1pudct"}],["path",{d:"M9 21V9",key:"1oto5p"}]],d=a("panels-top-left",r),c=`
+@keyframes fadeSlideUp {
+  0% { opacity:0; transform: translateY(14px); }
+  100% { opacity:1; transform: translateY(0); }
+}
+`;class f extends o.Component{constructor(s){super(s),this.state={mounted:!1,width:window.innerWidth,copied:!1},this.handleResize=this.handleResize.bind(this),this.copyToClipboard=this.copyToClipboard.bind(this)}componentDidMount(){this.setState({mounted:!0}),window.addEventListener("resize",this.handleResize)}componentWillUnmount(){window.removeEventListener("resize",this.handleResize)}handleResize(){this.setState({width:window.innerWidth})}copyToClipboard(s){navigator.clipboard.writeText(s).then(()=>{this.setState({copied:!0}),setTimeout(()=>this.setState({copied:!1}),1500)})}render(){const s=this.state.mounted?"motion-safe:animate-[fadeSlideUp_0.6s_ease-out_forwards]":"opacity-0",t="border border-slate-300/20 dark:border-slate-700 rounded-2xl p-5 bg-white/70 dark:bg-slate-900/70 shadow transition-all duration-300 hover:shadow-xl hover:border-sky-400",i=`
+/* Mobile */
+.container { padding: 1rem; }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container { display: grid; grid-template-columns: 1fr 1fr; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container { grid-template-columns: repeat(3, 1fr); }
+}`;return e.jsxs("div",{className:"leading-relaxed text-slate-700 dark:text-slate-300 space-y-8",children:[e.jsx("style",{children:c}),e.jsxs("section",{className:`${t} ${s}`,children:[e.jsxs("h2",{className:"text-xl font-semibold flex items-center gap-2 text-sky-500",children:[e.jsx(d,{size:18})," Designing Layouts Across Devices"]}),e.jsx("p",{className:"mt-2",children:"A professional website must behave differently on phones, tablets and desktops. Swadeep checks notes on mobile in Barrackpore, while Abhronila edits projects on desktop in Naihati."})]}),e.jsxs("section",{className:`${t} ${s} motion-safe:animation-delay-[120ms]`,children:[e.jsxs("svg",{viewBox:"0 0 400 80",className:"w-full",children:[e.jsx("rect",{x:"10",y:"30",width:"380",height:"10",rx:"5",fill:"#0ea5e9"}),e.jsx("circle",{cx:this.state.width/1600*380+10,cy:"35",r:"8",fill:"#22c55e",children:e.jsx("animate",{attributeName:"r",from:"6",to:"8",dur:"0.4s"})}),e.jsx("text",{x:"10",y:"20",fill:"#94a3b8",fontSize:"12",children:"Mobile"}),e.jsx("text",{x:"180",y:"20",fill:"#94a3b8",fontSize:"12",children:"Tablet"}),e.jsx("text",{x:"330",y:"20",fill:"#94a3b8",fontSize:"12",children:"Desktop"})]}),e.jsxs("p",{className:"mt-2 text-sm",children:["Current width: ",e.jsxs("b",{children:[this.state.width,"px"]})]})]}),e.jsxs("section",{className:`${t} ${s} motion-safe:animation-delay-[220ms]`,children:[e.jsx("h3",{className:"font-semibold text-sky-500",children:"Prototype"}),e.jsxs("div",{className:"relative group",children:[e.jsx("button",{onClick:()=>this.copyToClipboard(i),className:"absolute top-2 right-2 text-xs px-2 py-1 rounded bg-slate-700 text-slate-200 opacity-0 group-hover:opacity-100 transition-all",children:this.state.copied?"Copied!":"Copy"}),e.jsx("pre",{className:"bg-slate-800 text-slate-200 p-3 rounded-lg text-sm overflow-x-auto",children:i})]})]}),e.jsxs("section",{className:`${t} ${s} motion-safe:animation-delay-[320ms]`,children:[e.jsxs("h3",{className:"font-semibold flex items-center gap-2 text-red-400",children:[e.jsx(n,{size:16})," Common Pitfalls"]}),e.jsxs("ul",{className:"list-disc ml-6 mt-2",children:[e.jsx("li",{children:"Designing desktop first always"}),e.jsx("li",{children:"Using fixed widths everywhere"})]})]}),e.jsxs("section",{className:`${t} ${s} motion-safe:animation-delay-[420ms]`,children:[e.jsxs("h3",{className:"font-semibold flex items-center gap-2 text-emerald-400",children:[e.jsx(l,{size:16})," Best Practices"]}),e.jsxs("ul",{className:"list-disc ml-6 mt-2",children:[e.jsx("li",{children:"Start with mobile layout"}),e.jsx("li",{children:"Use grid only when space allows"})]})]}),e.jsxs("section",{className:`${t} ${s} motion-safe:animation-delay-[520ms]`,children:[e.jsx("h3",{className:"font-semibold text-sky-500",children:"Teacher’s Note"}),e.jsx("p",{className:"mt-2",children:"Ask students to resize browser and observe when columns should increase — this builds intuitive breakpoint thinking."})]})]})}}export{f as default};
