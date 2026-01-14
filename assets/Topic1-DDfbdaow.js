@@ -1,0 +1,27 @@
+import{r as i,j as e}from"./index-C8p6Ail2.js";class a extends i.Component{componentDidMount(){window.scrollTo(0,0)}render(){return e.jsxs("div",{className:"space-y-10 leading-relaxed",children:[e.jsxs("section",{className:`\r
+          bg-slate-900/70 border border-slate-700 rounded-3xl p-6\r
+          transition-all duration-300 hover:shadow-xl\r
+          motion-safe:animate-[fadeSlideUp_0.8s_ease-out_forwards]\r
+        `,children:[e.jsx("h1",{className:"text-2xl font-bold text-sky-300",children:"Understanding the Role of Each Linux System Directory"}),e.jsxs("p",{className:"text-slate-300 mt-2",children:["Linux directories are like the departments of a school in ",e.jsx("b",{children:"Barrackpore"}),". Each has a responsibility — when you respect their roles, the system runs peacefully."]})]}),e.jsx("section",{className:`\r
+          grid md:grid-cols-2 gap-6\r
+          motion-safe:animate-[fadeSlideUp_1s_ease-out_forwards]\r
+        `,children:[["/bin","Essential user commands such as ls, cp, mv, cat. Even if everything breaks, /bin survives."],["/sbin","System administration commands like shutdown, fsck. Used mainly by the root user."],["/etc","All configuration files live here — network, users, passwords, services."],["/home","Personal folders of users like /home/swadeep or /home/tuhina."],["/root","Home directory of the root (administrator). NOT inside /home."],["/usr","Programs and libraries installed by the system: /usr/bin, /usr/lib."],["/var","Variable files — logs, mail, print queues. Always changing."],["/tmp","Temporary files used by programs. Automatically cleaned."],["/lib","Critical system libraries needed by /bin and /sbin programs."],["/proc","Virtual folder showing live system info like CPU, memory."],["/dev","Hardware devices treated as files: hard disk, USB, sound card."]].map(([s,r],l)=>e.jsxs("div",{className:`\r
+              bg-slate-900/60 border border-slate-700 p-4 rounded-xl\r
+              hover:shadow-lg transition-all duration-300\r
+            `,children:[e.jsx("p",{className:"text-sky-300 font-mono",children:s}),e.jsx("p",{className:"text-slate-400 text-sm mt-1",children:r})]},l))}),e.jsxs("section",{className:`\r
+          bg-emerald-900/10 border border-emerald-500/30 p-6 rounded-3xl\r
+          transition-all duration-300 hover:shadow-xl\r
+          motion-safe:animate-[fadeSlideUp_1.2s_ease-out_forwards]\r
+        `,children:[e.jsx("h2",{className:"text-xl font-semibold text-emerald-300",children:"Real-World Analogy"}),e.jsxs("p",{className:"text-slate-300 mt-2",children:["When ",e.jsx("b",{children:"Abhronila"})," logs in, she works inside ",e.jsx("code",{children:"/home/abhronila"}),". She must never touch ",e.jsx("code",{children:"/etc"})," or ",e.jsx("code",{children:"/bin"})," — just like students never enter the staff room in ",e.jsx("b",{children:"Shyamnagar School"}),"."]})]}),e.jsxs("section",{className:`\r
+          bg-rose-900/10 border border-rose-500/30 p-6 rounded-3xl\r
+          transition-all duration-300 hover:shadow-xl\r
+        `,children:[e.jsx("h2",{className:"text-xl font-semibold text-rose-300",children:"Common Pitfalls"}),e.jsxs("ul",{className:"list-disc pl-5 text-slate-300 text-sm space-y-1 mt-2",children:[e.jsxs("li",{children:["Editing files in ",e.jsx("code",{children:"/etc"})," without backup."]}),e.jsx("li",{children:"Running commands as root unnecessarily."}),e.jsxs("li",{children:["Storing personal files in ",e.jsx("code",{children:"/tmp"}),"."]}),e.jsxs("li",{children:["Confusing ",e.jsx("code",{children:"/root"})," with ",e.jsx("code",{children:"/home"}),"."]})]})]}),e.jsxs("section",{className:`\r
+          bg-sky-900/10 border border-sky-500/30 p-6 rounded-3xl\r
+          transition-all duration-300 hover:shadow-xl\r
+        `,children:[e.jsx("h2",{className:"text-xl font-semibold text-sky-300",children:"Best Practices"}),e.jsxs("ul",{className:"list-disc pl-5 text-slate-300 text-sm space-y-1 mt-2",children:[e.jsxs("li",{children:["Work inside your ",e.jsx("code",{children:"/home"})," folder."]}),e.jsxs("li",{children:["Use ",e.jsx("code",{children:"sudo"})," only when required."]}),e.jsxs("li",{children:["Always backup files before editing in ",e.jsx("code",{children:"/etc"}),"."]}),e.jsx("li",{children:"Never delete system directories blindly."})]})]}),e.jsxs("section",{className:`\r
+          bg-emerald-900/10 border border-emerald-500/30 p-6 rounded-3xl\r
+          transition-all duration-300 hover:shadow-xl\r
+        `,children:[e.jsx("h2",{className:"text-xl font-semibold text-emerald-300",children:"Mini Checklist"}),e.jsxs("ul",{className:"list-disc pl-5 text-slate-300 text-sm space-y-1 mt-2",children:[e.jsx("li",{children:"I know where user files are stored."}),e.jsxs("li",{children:["I understand what ",e.jsx("code",{children:"/etc"})," controls."]}),e.jsx("li",{children:"I avoid touching system folders casually."}),e.jsx("li",{children:"I treat Linux directories like departments — not dustbins."})]})]}),e.jsxs("section",{className:`\r
+          bg-sky-900/20 border border-sky-500/40 p-5 rounded-2xl\r
+          transition-all duration-300 hover:bg-sky-900/30\r
+        `,children:[e.jsx("h3",{className:"text-lg font-semibold text-sky-300",children:"👨‍🏫 Teacher’s Note"}),e.jsx("p",{className:"text-slate-300 mt-2",children:"Linux becomes easy when students treat folders with respect. Once the mental map is clear, even the scariest server looks friendly."})]})]})}}export{a as default};
