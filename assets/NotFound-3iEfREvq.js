@@ -1,0 +1,1 @@
+import{j as o,L as e}from"./index-CRiz6zY8.js";function t(){return o.jsxs("div",{children:[o.jsx("h2",{children:"404 - Page Not Found"}),o.jsx("p",{children:"The page you are looking for doesn't exist."}),o.jsx(e,{to:"/",children:"Go back to Home"})]})}export{t as default};
