@@ -1,0 +1,4 @@
+import{j as o}from"./index-Mgs-acYB.js";import{C as t}from"./CodeBlock-CE9jkO4m.js";import"./prism-BDzTaQJA.js";import"./prism-json-D0UlpdKh.js";import"./file-code-CuOgUEMJ.js";import"./copy-CPVRjwAa.js";import"./download-DH71BTay.js";import"./play-ByAZUIab.js";function m(){return o.jsxs("div",{className:"space-y-6",children:[o.jsx("h2",{className:"text-xl font-semibold text-sky-300",children:"for Loop"}),o.jsxs("p",{className:"text-slate-300 text-sm",children:["The ",o.jsx("code",{children:"for"})," loop is the most commonly used loop in JavaScript."]}),o.jsx(t,{code:`for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+// Output: 1 2 3 4 5`,language:"javascript"}),o.jsx("p",{className:"text-slate-400 text-sm",children:"Best for counting loops — start, end, and step are controlled in one place."})]})}export{m as default};
