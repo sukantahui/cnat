@@ -1,0 +1,15 @@
+import{r as a,j as n}from"./index-DI04DAgq.js";import{B as l}from"./BooleanAlgebraQuestionPaperTemplate-CbidC0Ck.js";import"./PrintButton-CDryAB_P.js";const m="BOOLEAN-ALGEBRA-SET-01",u="Boolean Algebra - Fundamental to Intermediate Level Question Paper",c="1.5 Hours",A=50,h=[{section:"A",type:"Very Short Answer (One Mark Each)",marksPerQuestion:1,totalQuestions:5,questions:[{q:"What are the two basic constants in Boolean Algebra?",marks:1,answer:"0 and 1"},{q:"What is the result of A + 0?",marks:1,answer:"A"},{q:"What is the result of A · 1?",marks:1,answer:"A"},{q:"What is the complement of 1?",marks:1,answer:"0"},{q:"Write the symbol for AND operation.",marks:1,answer:"· (dot)"}]},{section:"B",type:"Short Answer (2 Marks Each)",marksPerQuestion:2,totalQuestions:5,questions:[{q:"Explain AND, OR, NOT operations with truth table.",marks:2,answer:`AND gives 1 only if both inputs are 1. OR gives 1 if any input is 1. NOT reverses the value.
+
+Example:
+A B | AND OR
+0 0 | 0   0
+0 1 | 0   1
+1 0 | 0   1
+1 1 | 1   1`},{q:"State Identity Law in Boolean Algebra.",marks:2,answer:"A + 0 = A and A · 1 = A"},{q:"What is De Morgan’s Theorem?",marks:2,answer:"(A + B)' = A' · B' and (A · B)' = A' + B'"},{q:"Define minterm.",marks:2,answer:"A minterm is a product term in which all variables appear exactly once in either complemented or uncomplemented form."},{q:"What is a truth table?",marks:2,answer:"A truth table shows all possible input combinations and their corresponding output values."}]},{section:"C",type:"Medium Answer (5 Marks Each)",marksPerQuestion:5,totalQuestions:4,questions:[{q:"Simplify the Boolean expression: A + A·B",marks:5,answer:"A + A·B = A (Absorption Law)"},{q:"Simplify using Boolean laws: (A + B)(A + B')",marks:5,answer:"(A + B)(A + B') = A"},{q:"Construct truth table for expression: Y = A·B + A'",marks:5,answer:`A B | Y
+0 0 | 1
+0 1 | 1
+1 0 | 0
+1 1 | 1`},{q:"Simplify using De Morgan’s Theorem: (A·B + C)'",marks:5,answer:"(A·B + C)' = (A·B)' · C' = (A' + B') · C'"}]},{section:"D",type:"Long Answer (10 Marks Each)",marksPerQuestion:10,totalQuestions:1,questions:[{q:`Simplify the Boolean expression using K-map:
+F(A,B,C) = Σ(1,2,3,5)`,marks:10,answer:`Using 3-variable K-map:
+F = B'C + A'C + AB
+(Students should draw K-map and group terms)`}]}],p={paperId:m,title:u,duration:c,totalMarks:A,sections:h};function g(){const[s,o]=a.useState(!1);a.useEffect(()=>{const e=()=>{const i=localStorage.getItem("token");o(i!==null)};e(),window.addEventListener("storage",e);const t=()=>e();return window.addEventListener("authChange",t),()=>{window.removeEventListener("storage",e),window.removeEventListener("authChange",t)}},[]);const r={name:"Coder & AccoTax",address:"25(10/A) Shibtala Road, PO - N.C. Pukur, Barrackpore, Kol-122",phone:"+91 7003756860",email:"contact@codernaccotax.co.in",website:"www.codernaccotax.co.in"};return n.jsx("div",{className:"p-6 bg-gray-900 min-h-screen",children:n.jsx(l,{data:p,isLoggedIn:s,organizationDetails:r})})}export{g as default};
