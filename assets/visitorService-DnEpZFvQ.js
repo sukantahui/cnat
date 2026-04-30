@@ -1,0 +1,1 @@
+import{v as o}from"./index-sRNy85CP.js";const t={saveInquiry:async r=>{try{return(await o.post("/dev/visitors",r)).data}catch(e){throw console.error("Error:",e),err.response?.data||err}},getAll:async()=>{try{return(await o.get("/visitors")).data}catch(r){throw console.error("Error:",r),err.response?.data||err}}};export{t as v};
