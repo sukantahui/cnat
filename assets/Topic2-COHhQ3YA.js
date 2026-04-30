@@ -1,0 +1,108 @@
+import{j as e}from"./index-DdIeXD-l.js";import{P as s}from"./PythonFileLoader-CE49QObx.js";import{T as r}from"./TeacherSukantaHui-Ds9MNVZs.js";import"./PythonCodeBlock-BOxn5YL9.js";import"./prism-bVBSx9jp.js";import"./browser-DPO_eEMk.js";import"./git-branch-mOcsg_Cc.js";const n=`# builtin_functions.py\r
+# Demonstrating common Python built-in functions\r
+\r
+# print() - output to console\r
+print("Hello, welcome to built-in functions!")\r
+\r
+# len() - get length of a string or list\r
+message = "Python"\r
+print(f"The length of '{message}' is {len(message)}")\r
+\r
+# type() - check data type\r
+number = 42\r
+print(f"The type of {number} is {type(number)}")\r
+\r
+# input() - get user input (uncomment to test)\r
+# name = input("What is your name? ")\r
+# print(f"Nice to meet you, {name}!")\r
+\r
+# range() - generate a sequence\r
+print("Numbers from 0 to 4:")\r
+for i in range(5):\r
+    print(i)\r
+\r
+# sum() - add all numbers in a list\r
+marks = [85, 90, 78, 92]\r
+print(f"Total marks: {sum(marks)}")`,t=`# user_defined_functions.py\r
+# Creating our own functions for specific tasks\r
+\r
+# Function to greet a student\r
+def greet(student_name):\r
+    print(f"Hello, {student_name}! Welcome to class.")\r
+\r
+# Function to calculate area of a rectangle\r
+def calculate_area(length, width):\r
+    area = length * width\r
+    print(f"Area: {area} square units")\r
+    return area\r
+\r
+# Function to check if a number is even\r
+def is_even(number):\r
+    if number % 2 == 0:\r
+        return True\r
+    else:\r
+        return False\r
+\r
+# Using our user-defined functions\r
+greet("Swadeep")\r
+greet("Tuhina")\r
+\r
+calculate_area(5, 3)\r
+\r
+num = 7\r
+if is_even(num):\r
+    print(f"{num} is even")\r
+else:\r
+    print(f"{num} is odd")`,a=`# mix_builtin_user.py\r
+# Combining built-in and user-defined functions\r
+\r
+# User-defined function\r
+def get_average(grades):\r
+    # Using built-in sum() and len()\r
+    total = sum(grades)\r
+    count = len(grades)\r
+    average = total / count\r
+    return average\r
+\r
+# User-defined function to display student report\r
+def display_report(name, grades):\r
+    # Using built-in print()\r
+    print(f"\\n--- Report for {name} ---")\r
+    print(f"Grades: {grades}")\r
+    avg = get_average(grades)\r
+    # Using built-in round()\r
+    print(f"Average: {round(avg, 2)}")\r
+\r
+# Sample data\r
+students = [\r
+    ("Abhronila", [85, 90, 88]),\r
+    ("Debangshu", [78, 82, 79]),\r
+    ("Tuhina", [92, 95, 91])\r
+]\r
+\r
+# Using built-in len() and range() to loop\r
+for i in range(len(students)):\r
+    name, grades = students[i]\r
+    display_report(name, grades)`;function m(){return e.jsxs("div",{className:"w-full max-w-5xl mx-auto px-4 py-8 space-y-12 bg-gray-900 text-gray-100",children:[e.jsxs("section",{className:"space-y-6 reveal-fade-up",children:[e.jsx("h1",{className:"text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent",children:"📚 Types of Functions: Built‑in vs User‑defined"}),e.jsxs("div",{className:"prose prose-invert max-w-none space-y-4",children:[e.jsxs("p",{className:"text-lg leading-relaxed",children:["In Python, functions come in two main flavors: ",e.jsx("strong",{className:"text-blue-300",children:"built‑in functions"}),"that are always available, and ",e.jsx("strong",{className:"text-green-300",children:"user‑defined functions"}),"that you write yourself to solve specific problems."]}),e.jsx("div",{className:"bg-gray-800 p-4 rounded-lg border-l-4 border-blue-500",children:e.jsxs("p",{className:"font-mono text-sm",children:[e.jsx("span",{className:"text-yellow-300",children:"Built‑in:"})," print(), len(), input(), type(), range(), sum(), max(), min() …",e.jsx("br",{}),e.jsx("span",{className:"text-green-300",children:"User‑defined:"})," def calculate_average(): ...   def greet_student(): ..."]})})]})]}),e.jsxs("section",{className:"space-y-6 reveal-fade-up",style:{animationDelay:"0.1s"},children:[e.jsx("h2",{className:"text-3xl font-semibold border-l-4 border-green-500 pl-4",children:"🔍 Built‑in vs User‑defined – Key Differences"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"w-full text-left border-collapse",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-gray-800",children:[e.jsx("th",{className:"p-3 border border-gray-700",children:"Aspect"}),e.jsx("th",{className:"p-3 border border-gray-700",children:"Built‑in Functions"}),e.jsx("th",{className:"p-3 border border-gray-700",children:"User‑defined Functions"})]})}),e.jsxs("tbody",{className:"text-gray-300",children:[e.jsxs("tr",{className:"border-b border-gray-800",children:[e.jsx("td",{className:"p-3 border border-gray-700 font-semibold",children:"Who creates them?"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"Python developers (Guido van Rossum & team)"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"You (the programmer)"})]}),e.jsxs("tr",{className:"border-b border-gray-800",children:[e.jsx("td",{className:"p-3 border border-gray-700 font-semibold",children:"Availability"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"Always available – no need to define"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"Only available after you define them"})]}),e.jsxs("tr",{className:"border-b border-gray-800",children:[e.jsx("td",{className:"p-3 border border-gray-700 font-semibold",children:"Customization"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"Fixed behavior (you cannot change how print() works)"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"Fully customizable – you decide what it does"})]}),e.jsxs("tr",{className:"border-b border-gray-800",children:[e.jsx("td",{className:"p-3 border border-gray-700 font-semibold",children:"Naming freedom"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"Fixed names (print, len, etc.) – you cannot override them easily"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"You choose the name (must follow naming rules)"})]}),e.jsxs("tr",{className:"border-b border-gray-800",children:[e.jsx("td",{className:"p-3 border border-gray-700 font-semibold",children:"Examples"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"print(), len(), type(), input(), range(), sum(), max(), min(), abs(), round()"}),e.jsx("td",{className:"p-3 border border-gray-700",children:"calculate_gpa(), send_email(), validate_password(), etc."})]})]})]})})]}),e.jsxs("section",{className:"space-y-6 reveal-fade-up",style:{animationDelay:"0.2s"},children:[e.jsx("h2",{className:"text-3xl font-semibold border-l-4 border-yellow-500 pl-4",children:"🛠️ Most Useful Built‑in Functions"}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{className:"bg-gray-800/70 rounded-xl p-4 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300",children:[e.jsx("code",{className:"text-yellow-300 text-lg",children:"print()"}),e.jsx("p",{className:"text-gray-300 text-sm mt-1",children:"Displays output to the console."}),e.jsx("pre",{className:"text-xs mt-2 bg-gray-900 p-2 rounded",children:'print("Hello")'})]}),e.jsxs("div",{className:"bg-gray-800/70 rounded-xl p-4 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300",children:[e.jsx("code",{className:"text-yellow-300 text-lg",children:"len()"}),e.jsx("p",{className:"text-gray-300 text-sm mt-1",children:"Returns the number of items in a sequence."}),e.jsx("pre",{className:"text-xs mt-2 bg-gray-900 p-2 rounded",children:'len("Python") → 6'})]}),e.jsxs("div",{className:"bg-gray-800/70 rounded-xl p-4 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300",children:[e.jsx("code",{className:"text-yellow-300 text-lg",children:"type()"}),e.jsx("p",{className:"text-gray-300 text-sm mt-1",children:"Returns the data type of an object."}),e.jsx("pre",{className:"text-xs mt-2 bg-gray-900 p-2 rounded",children:"type(42) → <class 'int'>"})]}),e.jsxs("div",{className:"bg-gray-800/70 rounded-xl p-4 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300",children:[e.jsx("code",{className:"text-yellow-300 text-lg",children:"input()"}),e.jsx("p",{className:"text-gray-300 text-sm mt-1",children:"Reads a line from user input."}),e.jsx("pre",{className:"text-xs mt-2 bg-gray-900 p-2 rounded",children:'name = input("Name: ")'})]}),e.jsxs("div",{className:"bg-gray-800/70 rounded-xl p-4 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300",children:[e.jsx("code",{className:"text-yellow-300 text-lg",children:"range()"}),e.jsx("p",{className:"text-gray-300 text-sm mt-1",children:"Generates a sequence of numbers."}),e.jsx("pre",{className:"text-xs mt-2 bg-gray-900 p-2 rounded",children:"list(range(3)) → [0,1,2]"})]}),e.jsxs("div",{className:"bg-gray-800/70 rounded-xl p-4 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300",children:[e.jsx("code",{className:"text-yellow-300 text-lg",children:"sum()"}),e.jsx("p",{className:"text-gray-300 text-sm mt-1",children:"Adds up all items in an iterable."}),e.jsx("pre",{className:"text-xs mt-2 bg-gray-900 p-2 rounded",children:"sum([1,2,3]) → 6"})]})]})]}),e.jsxs("section",{className:"space-y-8 reveal-fade-up",style:{animationDelay:"0.3s"},children:[e.jsx("h2",{className:"text-3xl font-semibold border-l-4 border-green-500 pl-4",children:"💻 Live Python Examples"}),e.jsxs("div",{className:"space-y-3",children:[e.jsx("h3",{className:"text-xl font-medium text-yellow-300",children:"1️⃣ Built‑in Functions in Action (builtin_functions.py)"}),e.jsx(s,{fileModule:n,title:"builtin_functions.py",highlightLines:[]}),e.jsxs("p",{className:"text-gray-400 text-sm",children:["This script demonstrates common built‑in functions like ",e.jsx("code",{children:"print()"}),", ",e.jsx("code",{children:"len()"}),", ",e.jsx("code",{children:"type()"}),", ",e.jsx("code",{children:"input()"}),", and ",e.jsx("code",{children:"range()"}),"."]})]}),e.jsxs("div",{className:"space-y-3",children:[e.jsx("h3",{className:"text-xl font-medium text-yellow-300",children:"2️⃣ Creating Your Own Functions (user_defined_functions.py)"}),e.jsx(s,{fileModule:t,title:"user_defined_functions.py",highlightLines:[]}),e.jsxs("p",{className:"text-gray-400 text-sm",children:["Here we define three custom functions: ",e.jsx("code",{children:"greet()"}),", ",e.jsx("code",{children:"calculate_area()"}),", and ",e.jsx("code",{children:"is_even()"}),". Each solves a specific task."]})]}),e.jsxs("div",{className:"space-y-3",children:[e.jsx("h3",{className:"text-xl font-medium text-yellow-300",children:"3️⃣ Built‑in + User‑defined Together (mix_builtin_user.py)"}),e.jsx(s,{fileModule:a,title:"mix_builtin_user.py",highlightLines:[]}),e.jsx("p",{className:"text-gray-400 text-sm",children:"Real programs use both: built‑in functions handle common tasks (printing, user input), while user‑defined functions implement custom logic."})]})]}),e.jsxs("section",{className:"space-y-4 reveal-fade-up",style:{animationDelay:"0.4s"},children:[e.jsxs("h2",{className:"text-2xl font-semibold flex items-center gap-2",children:["💡 ",e.jsx("span",{children:"Tips & Tricks (Professional Level)"})]}),e.jsxs("ul",{className:"list-disc list-inside space-y-2 text-gray-300 bg-gray-800/50 p-5 rounded-xl",children:[e.jsxs("li",{children:[e.jsx("strong",{className:"text-purple-300",children:"Explore the docs:"})," Python has over 70 built‑in functions. Bookmark ",e.jsx("code",{children:"docs.python.org/3/library/functions.html"}),"."]}),e.jsxs("li",{children:[e.jsx("strong",{className:"text-purple-300",children:"Don’t reinvent the wheel:"})," Before writing a function, check if a built‑in or standard library function already does it (e.g., ",e.jsx("code",{children:"math.sqrt()"})," for square roots)."]}),e.jsxs("li",{children:[e.jsx("strong",{className:"text-purple-300",children:"Shadowing danger:"})," Avoid naming your variables/functions like built‑ins (e.g., ",e.jsx("code",{children:"print = 5"}),"). That breaks ",e.jsx("code",{children:"print()"}),"."]}),e.jsxs("li",{children:[e.jsxs("strong",{className:"text-purple-300",children:["Use ",e.jsx("code",{children:"help()"}),":"]})," In the Python interactive shell, ",e.jsx("code",{children:"help(print)"})," shows documentation for any built‑in function."]}),e.jsxs("li",{children:[e.jsx("strong",{className:"text-purple-300",children:"Leverage built‑ins for performance:"})," Built‑ins are implemented in C and are much faster than equivalent pure Python loops."]})]})]}),e.jsxs("section",{className:"space-y-4 reveal-fade-up",style:{animationDelay:"0.5s"},children:[e.jsxs("h2",{className:"text-2xl font-semibold flex items-center gap-2",children:["⚠️ ",e.jsx("span",{children:"Common Pitfalls"})]}),e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"bg-red-900/20 border-l-4 border-red-500 p-4 rounded",children:[e.jsx("p",{className:"font-bold text-red-300",children:"❌ Overwriting built‑in function names"}),e.jsxs("p",{className:"text-gray-300",children:[e.jsx("code",{children:"len = 10"})," then later ",e.jsx("code",{children:'len("hello")'})," → TypeError. Use different names."]})]}),e.jsxs("div",{className:"bg-red-900/20 border-l-4 border-red-500 p-4 rounded",children:[e.jsx("p",{className:"font-bold text-red-300",children:"❌ Forgetting to define a user‑defined function before using it"}),e.jsxs("p",{className:"text-gray-300",children:["Calls to custom functions must come after the ",e.jsx("code",{children:"def"})," block."]})]}),e.jsxs("div",{className:"bg-red-900/20 border-l-4 border-red-500 p-4 rounded",children:[e.jsx("p",{className:"font-bold text-red-300",children:"❌ Using built‑in functions incorrectly (wrong arguments)"}),e.jsxs("p",{className:"text-gray-300",children:[e.jsx("code",{children:"len(42)"})," → TypeError because ",e.jsx("code",{children:"len()"})," expects a sequence."]})]}),e.jsxs("div",{className:"bg-red-900/20 border-l-4 border-red-500 p-4 rounded",children:[e.jsx("p",{className:"font-bold text-red-300",children:"❌ Thinking that user‑defined functions are slower than built‑ins"}),e.jsx("p",{className:"text-gray-300",children:"They are slower, but for most tasks it doesn’t matter. Clarity first."})]})]})]}),e.jsxs("section",{className:"space-y-4 reveal-fade-up",style:{animationDelay:"0.6s"},children:[e.jsxs("h2",{className:"text-2xl font-semibold flex items-center gap-2",children:["✅ ",e.jsx("span",{children:"Best Practices"})]}),e.jsx("div",{className:"bg-emerald-900/20 border border-emerald-700 rounded-xl p-5",children:e.jsxs("ul",{className:"list-disc list-inside space-y-2 text-gray-200",children:[e.jsx("li",{children:"Prefer built‑in functions when they meet your needs – they are tested, fast, and familiar."}),e.jsx("li",{children:"Write user‑defined functions to encapsulate repeated logic or to make complex code readable."}),e.jsxs("li",{children:["Never use built‑in names as variable names (e.g., avoid ",e.jsx("code",{children:"list"}),", ",e.jsx("code",{children:"dict"}),", ",e.jsx("code",{children:"str"}),", ",e.jsx("code",{children:"print"}),")."]}),e.jsx("li",{children:"Document your user‑defined functions with docstrings (triple quotes) explaining what they do."}),e.jsxs("li",{children:["Start each function with a verb to clarify action (e.g., ",e.jsx("code",{children:"get_average()"}),", ",e.jsx("code",{children:"display_menu()"}),")."]})]})})]}),e.jsxs("section",{className:"space-y-4 reveal-fade-up",style:{animationDelay:"0.7s"},children:[e.jsxs("h2",{className:"text-2xl font-semibold flex items-center gap-2",children:["📋 ",e.jsx("span",{children:"Mini Checklist (What Students Must Remember)"})]}),e.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-2 gap-3",children:[e.jsxs("div",{className:"flex items-center gap-2 bg-gray-800 p-3 rounded-lg",children:[e.jsx("span",{className:"text-green-400",children:"✔️"})," Built‑ins are ready to use (print, len, input)"]}),e.jsxs("div",{className:"flex items-center gap-2 bg-gray-800 p-3 rounded-lg",children:[e.jsx("span",{className:"text-green-400",children:"✔️"})," User‑defined need ",e.jsx("code",{children:"def"})," and a name"]}),e.jsxs("div",{className:"flex items-center gap-2 bg-gray-800 p-3 rounded-lg",children:[e.jsx("span",{className:"text-green-400",children:"✔️"})," Built‑ins cannot be changed; user‑defined are flexible"]}),e.jsxs("div",{className:"flex items-center gap-2 bg-gray-800 p-3 rounded-lg",children:[e.jsx("span",{className:"text-green-400",children:"✔️"})," Do NOT name variables like built‑in functions"]}),e.jsxs("div",{className:"flex items-center gap-2 bg-gray-800 p-3 rounded-lg",children:[e.jsx("span",{className:"text-green-400",children:"✔️"})," Use ",e.jsx("code",{children:"help()"})," to learn about any built‑in"]}),e.jsxs("div",{className:"flex items-center gap-2 bg-gray-800 p-3 rounded-lg",children:[e.jsx("span",{className:"text-green-400",children:"✔️"})," Most programs mix both types"]})]})]}),e.jsxs("section",{className:"space-y-3 reveal-fade-up",style:{animationDelay:"0.8s"},children:[e.jsx("h2",{className:"text-2xl font-semibold text-amber-300",children:"🧠 Think About..."}),e.jsxs("div",{className:"bg-amber-900/20 border border-amber-700 rounded-xl p-5 italic text-gray-200",children:[e.jsxs("p",{children:["🔍 ",e.jsx("strong",{children:"Observe carefully:"})," What happens if you type ",e.jsx("code",{children:'print = "hello"'})," and then try ",e.jsx("code",{children:'print("world")'}),"? Try it."]}),e.jsxs("p",{className:"mt-2",children:["🔍 ",e.jsx("strong",{children:"Try changing this:"})," In ",e.jsx("code",{children:"mix_builtin_user.py"}),", replace ",e.jsx("code",{children:"len()"})," with your own ",e.jsx("code",{children:"def my_len(seq):"})," that counts manually. Compare the effort."]}),e.jsxs("p",{className:"mt-2",children:["🔍 ",e.jsx("strong",{children:"Think about:"})," Why do you think Python provides so many built‑ins? What would programming be like without them?"]})]})]}),e.jsx("section",{className:"reveal-fade-up",style:{animationDelay:"0.9s"},children:e.jsx(r,{note:"Students often underestimate built‑ins. 🧑‍🏫 Challenge them: 'Write a program that finds the largest of three numbers without using max().' Then show the built‑in max(). They’ll appreciate the convenience. Also highlight the danger of shadowing: accidentally using 'list' as a variable name breaks later code. Encourage exploring the official docs – it's a skill that separates novices from pros."})}),e.jsxs("section",{className:"reveal-fade-up",style:{animationDelay:"1s"},children:[e.jsx("div",{className:"bg-gray-800/50 rounded-xl p-6 flex justify-center",children:e.jsxs("svg",{width:"520",height:"200",viewBox:"0 0 520 200",className:"max-w-full h-auto",children:[e.jsx("rect",{x:"30",y:"30",width:"200",height:"140",fill:"#1e3a8a",stroke:"#3b82f6",strokeWidth:"2",rx:"8",children:e.jsx("animate",{attributeName:"opacity",values:"0.8;1;0.8",dur:"3s",repeatCount:"indefinite"})}),e.jsx("text",{x:"130",y:"55",fill:"white",fontSize:"14",textAnchor:"middle",fontWeight:"bold",children:"Built‑in Functions"}),e.jsx("text",{x:"130",y:"80",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"print()"}),e.jsx("text",{x:"130",y:"100",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"len()"}),e.jsx("text",{x:"130",y:"120",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"input()"}),e.jsx("text",{x:"130",y:"140",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"range()"}),e.jsx("text",{x:"130",y:"160",fill:"#6b7280",fontSize:"11",textAnchor:"middle",children:"+ many more"}),e.jsx("line",{x1:"230",y1:"100",x2:"280",y2:"100",stroke:"#fbbf24",strokeWidth:"2",markerEnd:"url(#arrowYellow)"}),e.jsx("text",{x:"255",y:"90",fill:"#fbbf24",fontSize:"11",children:"Mix"}),e.jsx("text",{x:"255",y:"115",fill:"#fbbf24",fontSize:"11",children:"together"}),e.jsx("rect",{x:"290",y:"30",width:"200",height:"140",fill:"#065a46",stroke:"#34d399",strokeWidth:"2",rx:"8",children:e.jsx("animate",{attributeName:"opacity",values:"0.8;1;0.8",dur:"3s",begin:"0.5s",repeatCount:"indefinite"})}),e.jsx("text",{x:"390",y:"55",fill:"white",fontSize:"14",textAnchor:"middle",fontWeight:"bold",children:"User‑defined"}),e.jsx("text",{x:"390",y:"80",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"def greet():"}),e.jsx("text",{x:"390",y:"100",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"def calc_area():"}),e.jsx("text",{x:"390",y:"120",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"def is_even():"}),e.jsx("text",{x:"390",y:"140",fill:"#94a3b8",fontSize:"12",textAnchor:"middle",children:"def validate():"}),e.jsx("text",{x:"390",y:"160",fill:"#6b7280",fontSize:"11",textAnchor:"middle",children:"you create them"}),e.jsx("defs",{children:e.jsx("marker",{id:"arrowYellow",markerWidth:"8",markerHeight:"8",refX:"6",refY:"4",orient:"auto",children:e.jsx("path",{d:"M0,0 L8,4 L0,8 Z",fill:"#fbbf24"})})})]})}),e.jsx("p",{className:"text-center text-sm text-gray-400 mt-2",children:"Built‑ins are ready to use; user‑defined functions are written by you for custom tasks."})]}),e.jsx("style",{children:`
+        @keyframes fadeUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .reveal-fade-up {
+          animation: fadeUp 0.6s ease-out forwards;
+          opacity: 0;
+          animation-fill-mode: forwards;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .reveal-fade-up {
+            animation: none;
+            opacity: 1;
+          }
+        }
+      `})]})}export{m as default};
