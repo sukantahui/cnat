@@ -1,1 +1,0 @@
-import{r as e,j as r}from"./index-gsr__VoO.js";import{W as o}from"./Whiteboard-CWIEx7eA.js";import"./FileSaver.min-CkmU8hVl.js";import"./grid-3x3-CVtluPQI.js";import"./copy-_YtngGN_.js";import"./download-BR7jb7LT.js";class d extends e.Component{render(){return r.jsx("div",{className:"h-full flex flex-col overflow-hidden",children:r.jsx(o,{})})}}export{d as default};

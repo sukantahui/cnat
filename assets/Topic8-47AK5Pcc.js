@@ -1,1 +1,0 @@
-import{j as t}from"./index-lLlMAFg5.js";import{P as o}from"./PracticeEngine-COIBAMvh.js";import{q as r}from"./operators-and-expressions-Dbde0I1R.js";import"./CodeBlockGeneral-B7ULhRSy.js";import"./prism-json-Bd5be5ME.js";function a(){return t.jsx(o,{title:"Module Test – C Operators and Expressions",questions:r,testId:"c_foundation_test_100"})}export{a as default};

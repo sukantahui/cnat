@@ -1,1 +1,0 @@
-import{a as e}from"./api-Cgk0GMDb.js";const o={getAll:async()=>{try{return(await e.get("/students")).data}catch(r){throw console.error("Error fetching students:",r),r}},create:async r=>{try{return(await e.post("/students",r)).data}catch(t){throw console.error("Error saving student:",t),t}}};export{o as s};
