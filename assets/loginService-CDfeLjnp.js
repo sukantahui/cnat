@@ -1,0 +1,1 @@
+import{a as e}from"./api-DRw56g4m.js";const a={login:async r=>{try{return console.log("🧭 Base URL:","https://codernaccotax.co.in/cnat_api/public/api"),(await e.post("/login",r)).data}catch(o){throw console.error("Login failed:",o),o}},currentUser:async()=>{try{return(await e.get("/me")).data}catch(r){throw r}}};export{a as l};

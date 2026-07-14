@@ -1,0 +1,1 @@
+import{a as s}from"./api-DRw56g4m.js";const o={getAll:async()=>{try{return(await s.get("/fees-receipts")).data}catch(e){throw console.error("Error fetching students:",e),e}},create:async e=>{try{return(await s.post("/fees-receipts",e)).data}catch(r){throw console.error("Error saving student:",r),r}}};export{o as s};
