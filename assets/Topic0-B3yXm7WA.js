@@ -1,9 +1,0 @@
-import{j as e}from"./index-YkKVfVEM.js";import{E as t}from"./EditableCodeBlock-Bb8nn4Xi.js";import"./index-gzZkhgxu.js";import"./braces-TvM0FylP.js";import"./createLucideIcon-Cim-rzMd.js";import"./file-code-DitFwktW.js";import"./layout-list-CEyAvgT5.js";import"./play-DEajiqWU.js";import"./type-YS4uKozr.js";import"./refresh-cw-Dxhotsjr.js";import"./minimize-2-Dy1dCTjQ.js";import"./wand-sparkles-DqpDcVN7.js";import"./copy-BbjsF4-T.js";import"./download-D7sIJXhG.js";import"./eye-off-BJzm0hT7.js";import"./eye-TpFMMSv4.js";function j(){return e.jsxs("div",{className:"space-y-6",children:[e.jsx("h2",{className:"text-xl font-semibold text-sky-300",children:"Function Declarations vs Function Expressions"}),e.jsxs("p",{className:"text-slate-300 text-sm leading-relaxed",children:["JavaScript provides two main ways to define functions:",e.jsx("strong",{children:" function declarations "})," and",e.jsx("strong",{children:" function expressions"}),". Understanding the difference is essential for mastering hoisting and advanced JS concepts."]}),e.jsx("h3",{className:"text-lg text-slate-200 font-semibold",children:"Function Declaration"}),e.jsx(t,{defaultTab:"javascript",initialCode:`function greet() {
-  console.log("Hello from Coder & AccoTax!");
-}
-
-greet();`}),e.jsx("h3",{className:"text-lg text-slate-200 font-semibold",children:"Function Expression"}),e.jsx(t,{defaultTab:"javascript",initialCode:`const greet = function() {
-  console.log("Hello from Barrackpore!");
-};
-
-greet();`}),e.jsxs("p",{className:"text-slate-400 text-sm leading-relaxed",children:[e.jsx("strong",{children:"Function declarations"})," are hoisted, which means you can call them before their actual definition in the code.",e.jsx("strong",{children:"Function expressions"})," are ",e.jsx("em",{children:"not hoisted"})," and behave like normal variables."]})]})}export{j as default};
