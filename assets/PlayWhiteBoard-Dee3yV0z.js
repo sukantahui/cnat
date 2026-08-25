@@ -1,0 +1,1 @@
+import{b as e,j as r}from"./vendor-react-core-Doz9nIC6.js";import{W as o}from"./Whiteboard-Bs172LP3.js";import"./vendor-canvas-DpFPWUXn.js";import"./vendor-docs-B_hAsqlI.js";import"./vendor-icons-CbUXUJ65.js";class d extends e.Component{render(){return r.jsx("div",{className:"h-full flex flex-col overflow-hidden",children:r.jsx(o,{})})}}export{d as default};

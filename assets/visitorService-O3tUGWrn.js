@@ -1,1 +1,0 @@
-import{a as o}from"./api-DRw56g4m.js";const t={saveInquiry:async r=>{try{return(await o.post("/dev/visitors",r)).data}catch(s){throw console.error("Error saving inquiry:",s),s.response?.data||s}},getAll:async()=>{try{return(await o.get("/visitors")).data}catch(r){throw console.error("Error fetching visitors:",r),r.response?.data||r}}};export{t as v};
