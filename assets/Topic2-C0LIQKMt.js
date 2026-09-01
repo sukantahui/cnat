@@ -1,0 +1,1 @@
+import{j as a}from"./vendor-react-core-Doz9nIC6.js";import{S as s}from"./SingleStudentMarksheet-BgsPCQ_R.js";import{q as t}from"./question-DpKBpOUg.js";const i=()=>a.jsx("div",{className:"container mx-auto py-8",children:a.jsx(s,{questions:t,paperTitle:"Java Arrays – Practice Paper (Class X)"})});export{i as default};
