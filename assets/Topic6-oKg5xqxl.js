@@ -1,0 +1,1 @@
+import{j as t}from"./vendor-react-core-Doz9nIC6.js";import{P as o}from"./PracticeEngine-BdM88EtF.js";import{q as i}from"./intro-to-tallyprime-test-DNBjFLMp.js";import"./CodeBlockGeneral-DeFweuXn.js";import"./vendor-prism-ZrEUZN6d.js";function m(){return t.jsx(o,{title:"Module Test – Tally Accounting Basic",questions:i,testId:"c_foundation_test_100"})}export{m as default};
