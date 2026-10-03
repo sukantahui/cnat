@@ -1,0 +1,1 @@
+import{j as o}from"./vendor-react-core-B-R9HE-Z.js";import{L as e}from"./vendor-router-Bkib50Ff.js";function n(){return o.jsxs("div",{children:[o.jsx("h2",{children:"404 - Page Not Found"}),o.jsx("p",{children:"The page you are looking for doesn't exist."}),o.jsx(e,{to:"/",children:"Go back to Home"})]})}export{n as default};
